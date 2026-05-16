@@ -3,7 +3,14 @@
     "allow": [
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git pull *)",
+      "Bash(Copy-Item \".claude\\\\settings.local.json\" \".claude\\\\settings.local.json.bak\")",
+      "Bash(git merge *)",
+      "Bash(git push *)",
+      "Bash(git clone *)",
+      "Bash(gh pr create --title 'Apply midnight ocean color theme' --body ' *)",
+      "Bash(gh pr *)"
     ]
   }
 }
