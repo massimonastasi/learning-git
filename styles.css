@@ -1,22 +1,22 @@
 /* =========================================================
    Git cheat sheet — styles
-   Editorial cream-and-ink theme inspired by the source slide.
+   Midnight ocean theme — deep navy with sky-blue accents.
    ========================================================= */
 
 :root {
-  --bg: #f4ecd6;
-  --bg-deep: #ece2c5;
-  --ink: #1a1610;
-  --ink-soft: #4a4036;
-  --amber: #c9802a;
-  --gold: #e3a849;
-  --blue: #4a7ab8;
-  --rose: #c25b6b;
-  --green: #6a994e;
-  --red: #bc4749;
-  --line: rgba(26, 22, 16, 0.15);
+  --bg: #0b1120;
+  --bg-deep: #111827;
+  --ink: #dde4f0;
+  --ink-soft: #7d8ba8;
+  --amber: #0ea5e9;
+  --gold: #38bdf8;
+  --blue: #818cf8;
+  --rose: #fb7185;
+  --green: #34d399;
+  --red: #f87171;
+  --line: rgba(221, 228, 240, 0.1);
   --radius: 14px;
-  --shadow: 0 24px 48px -32px rgba(26, 22, 16, 0.35);
+  --shadow: 0 24px 48px -32px rgba(0, 0, 0, 0.6);
   --maxw: 1180px;
 }
 
@@ -38,7 +38,7 @@ body {
 code, .mono {
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.9em;
-  background: rgba(26, 22, 16, 0.07);
+  background: rgba(221, 228, 240, 0.1);
   padding: 0.08em 0.4em;
   border-radius: 4px;
 }
@@ -46,7 +46,7 @@ code, .mono {
 a {
   color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: rgba(201, 128, 42, 0.5);
+  text-decoration-color: rgba(14, 165, 233, 0.5);
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
   transition: color 0.15s, text-decoration-color 0.15s;
@@ -66,7 +66,7 @@ a:hover {
   justify-content: space-between;
   gap: 16px;
   padding: 14px clamp(20px, 4vw, 48px);
-  background: rgba(244, 236, 214, 0.85);
+  background: rgba(11, 17, 32, 0.9);
   backdrop-filter: saturate(140%) blur(10px);
   -webkit-backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--line);
@@ -272,11 +272,11 @@ a:hover {
 /* ---------- visuals ---------- */
 .concept-visual {
   margin: 0;
-  background: var(--ink);
-  border: 1px solid rgba(26, 22, 16, 0.3);
+  background: #0d1829;
+  border: 1px solid rgba(221, 228, 240, 0.08);
   border-radius: var(--radius);
   padding: clamp(28px, 5vw, 60px) clamp(20px, 4vw, 56px);
-  box-shadow: 0 32px 80px -24px rgba(26, 22, 16, 0.4);
+  box-shadow: 0 32px 80px -24px rgba(0, 0, 0, 0.7);
 }
 
 .anim-svg {
@@ -285,7 +285,7 @@ a:hover {
   height: auto;
   display: block;
   border-radius: 12px;
-  background: var(--bg);
+  background: #f4ecd6;
   margin: 0 auto;
   box-shadow: 0 20px 60px -12px rgba(0, 0, 0, 0.45);
 }
@@ -300,7 +300,7 @@ a:hover {
   appearance: none;
   border: 1px solid rgba(244, 236, 214, 0.35);
   background: transparent;
-  color: var(--bg);
+  color: #f4ecd6;
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   text-transform: uppercase;
@@ -311,9 +311,9 @@ a:hover {
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .replay:hover {
-  background: var(--bg);
-  color: var(--ink);
-  border-color: var(--bg);
+  background: #f4ecd6;
+  color: #1a1610;
+  border-color: #f4ecd6;
 }
 
 /* ---------- footer ---------- */
