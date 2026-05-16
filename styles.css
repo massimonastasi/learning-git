@@ -185,13 +185,16 @@ a:hover {
 .concept-grid {
   max-width: var(--maxw);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-  gap: clamp(40px, 6vw, 80px);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vw, 52px);
 }
-.concept-grid.reverse { direction: rtl; }
+.concept-grid.reverse { direction: ltr; }
 .concept-grid.reverse > * { direction: ltr; }
+
+.concept-text {
+  max-width: 72ch;
+}
 
 .concept-head {
   display: flex;
@@ -269,46 +272,48 @@ a:hover {
 /* ---------- visuals ---------- */
 .concept-visual {
   margin: 0;
-  background: var(--bg-deep);
-  border: 1px solid var(--line);
+  background: var(--ink);
+  border: 1px solid rgba(26, 22, 16, 0.3);
   border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: var(--shadow);
-  position: sticky;
-  top: 80px;
+  padding: clamp(28px, 5vw, 60px) clamp(20px, 4vw, 56px);
+  box-shadow: 0 32px 80px -24px rgba(26, 22, 16, 0.4);
 }
 
 .anim-svg {
   width: 100%;
+  max-width: 960px;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--bg);
+  margin: 0 auto;
+  box-shadow: 0 20px 60px -12px rgba(0, 0, 0, 0.45);
 }
 
 .concept-visual figcaption {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 14px;
+  justify-content: center;
+  margin-top: 24px;
 }
 
 .replay {
   appearance: none;
-  border: 1px solid var(--ink);
+  border: 1px solid rgba(244, 236, 214, 0.35);
   background: transparent;
-  color: var(--ink);
+  color: var(--bg);
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  padding: 8px 14px;
+  padding: 9px 18px;
   border-radius: 999px;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .replay:hover {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--bg);
 }
 
 /* ---------- footer ---------- */
@@ -325,9 +330,6 @@ a:hover {
 /* ---------- responsive ---------- */
 @media (max-width: 880px) {
   .toc { display: none; }
-  .concept-grid,
-  .concept-grid.reverse { grid-template-columns: 1fr; direction: ltr; }
-  .concept-visual { position: static; }
 }
 
 @media (prefers-reduced-motion: reduce) {
