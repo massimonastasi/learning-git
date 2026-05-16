@@ -10,7 +10,9 @@
       "Bash(git push *)",
       "Bash(git clone *)",
       "Bash(gh pr create --title 'Apply midnight ocean color theme' --body ' *)",
-      "Bash(gh pr *)"
+      "Bash(gh pr *)",
+      "Bash(git fetch *)",
+      "Bash(Test-Path C:\\\\Users\\\\massi\\\\Desktop\\\\learning-git-v2 *)"
     ]
   }
 }
